@@ -1,1 +1,20 @@
-<app-default-login-layout></app-default-login-layout>
+<app-default-login-layout
+    title="Fazer login"
+    primaryBtnText="Entrar"
+    secondaryBtnText="Cadastrar"
+>
+    <form [formGroup]="loginForm">
+        <app-primary-input
+            formName="email"
+            type="email"
+            label="Email"
+            placeholder="Ex.: joão123@spysuggar.com"
+        ></app-primary-input>
+        <app-primary-input
+            formName="password"
+            type="password"
+            label="Senha"
+            placeholder="Introduza a sua senha"
+        ></app-primary-input>
+    </form>
+</app-default-login-layout>
