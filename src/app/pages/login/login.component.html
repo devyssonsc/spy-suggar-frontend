@@ -1,20 +1,10 @@
-<app-default-login-layout
-    title="Fazer login"
-    primaryBtnText="Entrar"
-    secondaryBtnText="Cadastrar"
->
-    <form [formGroup]="loginForm">
-        <app-primary-input
-            formName="email"
-            type="email"
-            label="Email"
-            placeholder="Ex.: joão123@spysuggar.com"
-        ></app-primary-input>
-        <app-primary-input
-            formName="password"
-            type="password"
-            label="Senha"
-            placeholder="Introduza a sua senha"
-        ></app-primary-input>
-    </form>
-</app-default-login-layout>
+<main>
+    <section class="title-section">
+        <img src="/assets/logos/horizontal-branco.png"/>
+        <h3>Fazer login</h3>
+    </section>
+    <section class="form-section">
+        <app-form-login></app-form-login>
+        <button class="btn btn-secondary" (click)="redirectToRegister()">Registrar</button>
+    </section>
+</main>
