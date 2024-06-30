@@ -9,5 +9,5 @@ import { NavbarComponent } from '../../components/navbar/navbar.component';
   styleUrl: './profile-page.component.scss'
 })
 export class ProfilePageComponent {
-
+  
 }
