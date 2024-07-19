@@ -1,0 +1,4 @@
+Senha:
+	-Ao registrar-se, cria uma hash a partir da senha criada e salva no banco de dados
+	-Para fazer login cria uma senha, criptografa ela e vê se a hash bate com a que está salva no banco
+	-Sha1 ou MD5
