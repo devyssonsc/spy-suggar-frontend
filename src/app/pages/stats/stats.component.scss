@@ -1,0 +1,116 @@
+@import "../../../styles/variables.scss";
+
+.stats-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+    padding: 20px;
+
+    // background-color: green;
+
+    .today{
+
+        // background-color: greenyellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+
+        .today-values{
+
+            // background-color: aqua;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            padding-top: 100px;
+
+            .glucose{
+
+                // background-color: blue;
+
+                #blood-glucose{
+                    // background-color: brown;
+
+                    font-size: 10em;
+                    letter-spacing: -10px;
+                    line-height: 0;
+                }
+
+                img{
+                    width: 30px;
+                }
+            }
+
+            .rate{
+
+                // background-color: blueviolet;
+
+                #heart-rate{
+                    font-size: 3em;
+                }
+
+                i{
+                    font-size: 25px;
+                    color: red;
+                }
+            }
+        }
+
+        .measure-button {
+            background-color: $primary-color;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+    }
+
+    .past-days {
+        margin-top: 20px;
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+
+            div{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                span{
+                    line-height: 0;
+                }
+
+                img{
+                    width: 20px;
+                }
+
+                i{
+                    color: red;
+                }
+            }
+        }
+        
+        .date {
+            color: #999;
+        }
+        
+        .glucose, .past-days .pulse {
+            color: #333;
+        }
+    }
+}

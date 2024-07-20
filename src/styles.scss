@@ -7,6 +7,6 @@ html, body, *{
     font-family: 'Poppins', sans-serif;
 }
 
-.container{
-    margin-top: 50px;
+app-navbar + * {
+    margin-top: 100px;
 }

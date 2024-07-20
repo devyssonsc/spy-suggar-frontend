@@ -7,7 +7,7 @@ import { StatsComponent } from './pages/stats/stats.component';
 export const routes: Routes = [
     {
         path: '',
-        redirectTo: 'login',
+        redirectTo: 'stats',
         pathMatch: 'full',
     },
     {
