@@ -10,4 +10,30 @@ import { NavbarComponent } from '../../components/navbar/navbar.component';
 })
 export class StatsComponent {
 
+  openModel() {
+    const modal = document.getElementById('staticBackdrop');
+
+    if(modal != null) {
+      modal.style.display = 'block';
+    }
+  }
+
+  closeModel() {
+    const modal = document.getElementById('staticBackdrop');
+
+    if(modal != null) {
+      modal.style.display = 'none';
+    }
+  }
+
+  addData() {
+    const modal = document.getElementById('staticBackdrop');
+
+    if(modal != null) {
+      modal.style.display = 'none';
+    }
+
+    alert('Data added successfully');
+  }
+
 }
