@@ -4,6 +4,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 import { StatsComponent } from './pages/stats/stats.component';
 import { RelatoriosComponent } from './pages/relatorios/relatorios.component';
+import { NotificationsPageComponent } from './pages/notifications-page/notifications-page.component';
 
 export const routes: Routes = [
     {
@@ -30,5 +31,9 @@ export const routes: Routes = [
     {
         path: 'relatorios',
         component: RelatoriosComponent,
+    },
+    {
+        path: 'notifications',
+        component: NotificationsPageComponent,
     }
 ];
