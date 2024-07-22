@@ -4,7 +4,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 16px;
     text-align: center;
-    background-color: white;
+    background-color: #E5E5E6;
     width: 100%;
   }
   
@@ -16,12 +16,21 @@
   }
   
   .card-content {
-    padding-top: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 8px;
+
+    span{
+        font-size: 1.2rem;
+    }
   }
   
   .card-actions {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 8px;
     padding-top: 8px;
   }
